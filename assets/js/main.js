@@ -6,8 +6,8 @@ function Tarol()
     rendsz: document.getElementById("rendszam").value,
     uzema: document.getElementById("uzema").value,
     elsot: document.getElementById("elsot").checked,
-    3: document.getElementById("3").checked,
-    5: document.getElementById("5").checked 
+    aj3: document.getElementById("3").checked,
+    aj5: document.getElementById("5").checked 
     }
     tomb.push(obj);
 
@@ -43,6 +43,44 @@ function Statisztika()
         document.getElementById("benzinsz").innerHTML = ben;
         document.getElementById("dizelsz").innerHTML = diz;
         document.getElementById("elektsz").innerHTML = elekt;
+
+        if(tomb[i].elsot)
+        {
+            elsotu++;
+        }
+        arany = ( elsotu/tomb.length)*100
+        document.getElementById("szazalek").innerHTML = arany;
+
+
+        if(tomb[i].a3)
+        {
+            aj3++;
+        }
+        else
+        {
+            aj5++;
+        }
+
+        if(aj3 < aj5)
+        {
+            document.getElementById("nepszerubb").innerHTML = "Az 5-ös modell"
+        }
+        else
+        {
+            document.getElementById("nepszerubb").innerHTML = "Az 3-mas modell"
+        }
+
+        if(tomb[i].rendsz.length > 7)
+        {
+            uj++;
+        }
+        else
+        {
+            regi++;
+        }
+        document.getElementById("regirend").innerHTML = regi;
+        document.getElementById("ujirend").innerHTML = uj;
+
 
         
         

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Rendszámok</title>
 </head>
 <body>
@@ -23,7 +24,39 @@
     <button onclick="Tarol()">Tárol</button>
     <button onclick="Statisztika()">Statisztika</button>
 
-    <div id="tablazat"></div>
+    <div id="tablazat">
+        <table>
+            <th>Üzemanyag</th>
+            <td colspan="2">Benzin</td>
+            <td colspan="2">Dízel</td>
+            <td colspan="2">Elektromos</td>
+            <tr>
+                <td id="benzinsz"></td>
+                <td id="dizelsz"></td>
+                <td id="elektsz"></td>
+            </tr>
+            <tr>
+                <th>
+                    Első tulajdonosok százalékos aránya:
+                    <td id="szazalek" colspan="6"></td>
+                </th>
+            </tr>
+            <tr>
+                <th>Rendszámok megoszlása</th>
+                <td colspan="3">Régi Rendszám</td>
+                <td colspan="3"> Új rendszám</td>
+            </tr>
+            <tr>
+                <th rowspan="1"></th>
+                <td id="regirend">0</td>
+                <td id="ujrend">0</td>
+            </tr>
+            <tr>
+                <th>Melyik a népszerűbb?</th>
+                <td colspan="6" id="nepszerubb"></td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
 <script src="assets/js/main.js"></script>
