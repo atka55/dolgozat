@@ -30,11 +30,11 @@ function Statisztika()
     {
         if(tomb[i].uzema == "benzin") 
         {
-            ben++
+            ben++;
         }
         else if(tomb[i].uzema == "dizel") 
         {
-            diz++
+            diz++;
         }
         else
         {
@@ -52,16 +52,16 @@ function Statisztika()
         document.getElementById("szazalek").innerHTML = arany;
 
 
-        if(tomb[i].a3)
+        if(tomb[i].aj3)
         {
-            aj3++;
+            a3++;
         }
         else
         {
-            aj5++;
+            a5++;
         }
 
-        if(aj3 < aj5)
+        if(a3 < a5)
         {
             document.getElementById("nepszerubb").innerHTML = "Az 5-ös modell"
         }
