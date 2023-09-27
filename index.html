@@ -8,7 +8,7 @@
 </head>
 <body>
     
-    Rendszám: <input type="text">
+    Rendszám: <input type="text" id="rendszam">
 
     <select id="uzema">
         <option id="benzin" value="benzin">Benzin</option>
@@ -16,11 +16,12 @@
         <option id="elektromos" value="elektromos">Elektromos</option>
     </select>
     <br>
-    Első tulajdonos<input type="checkbox"> <br>
-    3 ajtós <input type="radio" id="3"> <br>
-    5 ajtós <input type="radio" id="5" checked> <br>
+    Első tulajdonos<input type="checkbox" id="elsot"> <br>
+    3 ajtós <input type="radio" id="3" name="5" > <br>
+    5 ajtós <input type="radio" id="5" name="5"  checked> <br>
 
     <button onclick="Tarol()">Tárol</button>
+    <button onclick="Statisztika()">Statisztika</button>
 </body>
 </html>
 <script src="assets/js/main.js"></script>
